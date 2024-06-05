@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+#background {
+    display: grid;
+    align-items: center;
+    background-image: linear-gradient(#007bcd, #001120);
+    width: 100vw;
+    height: 100vh;
+}
+
+#sign_in {
+    margin: auto;
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    box-shadow: 0px 0px 10px;
+    border-radius: 2vw;
+    background-color: rgba(0, 0, 0, 0.072);
+}
+
+#title {
+    font-size:2vw;
+    position: relative;
+    text-align: center;
+    margin-top: 4vw;
+    color:white;
+    margin-bottom: 4vw;
+}
+
+input {
+    width: 17vw;
+    height: 2vw;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: white;
+    border-style: solid;
+    padding:0.2vw;
+    font-size: 0.8vw;
+    border-radius: 0.5vw;
+    display: grid;
+    color:white;
+}
+
+label {
+    color:white;
+    font-size: 0.7vw;
+}
+
+#userandpassword {
+    position: relative;
+    margin-left: 6.5vw; 
+}

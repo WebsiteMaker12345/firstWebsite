@@ -1,106 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: "Poppins", Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#background {
-    display: grid;
-    align-items: center;
-    background-image: linear-gradient(#007bcd, #001120);
-    width: 100vw;
-    height: 100vh;
-}
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-#sign_in {
-    margin: auto;
-    position: relative;
-    width: 30vw;
-    height: 30vw;
-    box-shadow: 0px 0px 10px;
-    border-radius: 2vw;
-    background-color: rgba(0, 0, 0, 0.072);
-}
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
 
-#title {
-    font-size:2vw;
-    position: relative;
-    text-align: center;
-    margin-top: 4vw;
-    color:white;
-    margin-bottom: 4vw;
-}
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
 
-input {
-    width: 17vw;
-    height: 2vw;
-    background-color: rgba(255, 255, 255, 0);
-    border-color: white;
-    border-style: solid;
-    padding:0.2vw;
-    font-size: 0.8vw;
-    border-radius: 0.5vw;
-    display: grid;
-    color:white;
-}
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
 
-label {
-    color:white;
-    font-size: 0.7vw;
-}
-
-#userandpassword {
-    position: relative;
-    margin-left: 6.5vw; 
-}
-
-@media screen and (max-width: 1290px) {
-
-    #sign_in {
-        margin: auto;
-        position: relative;
-        width: 90vw;
-        height: 180vw;
-        box-shadow: 0px 0px 10px;
-        border-radius: 2vw;
-        background-color: rgba(0, 0, 0, 0.072);
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
     }
-
-    #title {
-        font-size: 9vw;
-        position: relative;
-        text-align: center;
-        margin-top: 10vw;
-        color:white;
-        margin-bottom: 50vw;
+    a:hover {
+      color: #747bff;
     }
-
-    input {
-        width: 70vw;
-        height: 7vw;
-        background-color: rgba(255, 255, 255, 0);
-        border-color: white;
-        border-style: solid;
-        padding:2vw;
-        font-size: 4vw;
-        border-radius: 0.5vw;
-        display: grid;
-        color:white;
+    button {
+      background-color: #f9f9f9;
     }
-
-    label {
-        color:white;
-        font-size: 2.5vw;
-    }
-    
-    #userandpassword {
-        position: relative;
-        margin-left: 7.7vw; 
-    }
-
-}
+  }
+  
+img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  }
